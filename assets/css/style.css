@@ -235,8 +235,17 @@
 }
 
 .deliverable-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(201, 168, 76, 0.1);
+  border: 1px solid rgba(201, 168, 76, 0.2);
   color: var(--clr-gold);
   margin-bottom: var(--space-4);
+  flex-shrink: 0;
 }
 
 .deliverable-card h3 {
