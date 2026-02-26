@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UX design and accessibility compliance by Ben Coetzee – WCAG 2.1 AA audits, inclusive design, and user journey optimisation for regulated industries across the UK." />
+  <title>UX &amp; Accessibility Compliance | Ben Coetzee Digital</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-mark">BC</span>
+        <span class="logo-text">Ben Coetzee Digital</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item--dropdown">
+          <a href="index.html#services" class="nav__link active" aria-haspopup="true" aria-expanded="false" id="services-toggle">Services</a>
+          <ul class="nav__dropdown" aria-label="Services submenu">
+            <li><a href="service-bespoke-design.html">Bespoke Website Design</a></li>
+            <li><a href="service-digital-marketing.html">Digital Marketing &amp; CRO</a></li>
+            <li><a href="service-platform-migrations.html">Platform Migrations</a></li>
+            <li><a href="service-ux-accessibility.html" class="active">UX &amp; Accessibility</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="contact.html" class="nav__link nav__cta">Discuss Your Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__bg"><div class="hero__grid"></div></div>
+      <div class="container page-hero__content">
+        <div class="svc-breadcrumb">
+          <a href="index.html#services">Services</a>
+          <span aria-hidden="true">/</span>
+          <span>UX &amp; Accessibility Compliance</span>
+        </div>
+        <div class="svc-hero-inner">
+          <div class="svc-hero-text">
+            <span class="section-label section-label--light">Service 04</span>
+            <h1 class="page-hero__title">Inclusive by Design.<br /><span class="highlight">Compliant by Default.</span></h1>
+            <p class="page-hero__sub">Accessibility is not a box to tick — it is a commercial and legal imperative. A more accessible website reaches more people, performs better in search, converts at higher rates, and protects your organisation from legal exposure. I design and remediate digital experiences that work for everyone.</p>
+            <div class="hero__actions">
+              <a href="contact.html" class="btn btn--primary">Request an Audit</a>
+              <a href="#what-i-do" class="btn btn--ghost">See What's Included</a>
+            </div>
+          </div>
+          <div class="svc-hero-stats">
+            <div class="svc-stat">
+              <span class="svc-stat__num">WCAG</span>
+              <span class="svc-stat__label">2.1 AA Standard</span>
+            </div>
+            <div class="svc-stat">
+              <span class="svc-stat__num">1 in 5</span>
+              <span class="svc-stat__label">Users Have a Disability</span>
+            </div>
+            <div class="svc-stat">
+              <span class="svc-stat__num">Legal</span>
+              <span class="svc-stat__label">Compliance Assured</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="svc-why-matters section section--light" id="why-matters">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Accessibility Matters</span>
+          <h2 class="section-title">The Business Case for Inclusive Design.</h2>
+        </div>
+        <div class="matters-grid">
+          <div class="matters-item">
+            <div class="matters-item__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Legal Protection</h3>
+            <p>The Equality Act 2010 requires businesses to make reasonable adjustments for people with disabilities. Public sector sites and increasingly private sector sites face legal challenge for non-compliance.</p>
+          </div>
+          <div class="matters-item">
+            <div class="matters-item__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Broader Audience Reach</h3>
+            <p>Approximately 1 in 5 people in the UK live with a disability. An inaccessible website is actively excluding a significant portion of your potential audience — and their purchasing power.</p>
+          </div>
+          <div class="matters-item">
+            <div class="matters-item__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>SEO Advantage</h3>
+            <p>Accessibility and SEO are deeply aligned. Proper heading structure, descriptive alt text, semantic HTML, and fast load times all contribute directly to improved search engine rankings.</p>
+          </div>
+          <div class="matters-item">
+            <div class="matters-item__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-8"/></svg>
+            </div>
+            <h3>Higher Conversion Rates</h3>
+            <p>Accessible sites are easier to use for everyone — not just those with disabilities. Cleaner navigation, better contrast, and logical content structure improve conversion rates across all user segments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Deliver -->
+    <section class="svc-deliverables section" id="what-i-do">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What's Included</span>
+          <h2 class="section-title">Comprehensive Accessibility &amp; UX Services.</h2>
+          <p class="section-sub">From initial audit to full remediation and ongoing compliance — every engagement is tailored to your organisation's specific risk profile and user needs.</p>
+        </div>
+        <div class="deliverables-grid">
+          <div class="deliverable-card">
+            <div class="deliverable-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <h3>WCAG 2.1 AA Accessibility Audit</h3>
+            <p>A comprehensive audit of your website against WCAG 2.1 Level AA criteria — covering perceivability, operability, understandability, and robustness. Delivered as a prioritised, actionable report.</p>
+          </div>
+          <div class="deliverable-card">
+            <div class="deliverable-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3>User Journey Mapping &amp; UX Review</h3>
+            <p>End-to-end review of your key user journeys — from landing to conversion — identifying friction points, confusing navigation, and drop-off triggers that are costing you enquiries.</p>
+          </div>
+          <div class="deliverable-card">
+            <div class="deliverable-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Accessibility Remediation</h3>
+            <p>Hands-on implementation of accessibility fixes — colour contrast corrections, keyboard navigation, ARIA label improvements, focus management, form accessibility, and screen reader compatibility.</p>
+          </div>
+          <div class="deliverable-card">
+            <div class="deliverable-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3>Inclusive Design Principles</h3>
+            <p>Accessibility built into new design work from the outset — not retrofitted. Colour palette validation, typography legibility, touch target sizing, and motion sensitivity considerations.</p>
+          </div>
+          <div class="deliverable-card">
+            <div class="deliverable-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Accessibility Statement &amp; Documentation</h3>
+            <p>A legally compliant accessibility statement for your website, plus internal documentation supporting your organisation's ongoing accessibility obligations and responsibilities.</p>
+          </div>
+          <div class="deliverable-card">
+            <div class="deliverable-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <h3>Team Training &amp; Awareness</h3>
+            <p>Practical training sessions for your content editors, developers, and marketing teams — ensuring accessibility is maintained as the site evolves, not just at the point of delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standards Section -->
+    <section class="svc-standards section section--dark" id="standards">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label section-label--light">Standards &amp; Compliance</span>
+          <h2 class="section-title section-title--light">What WCAG 2.1 AA Actually Means.</h2>
+          <p class="section-sub section-sub--light">WCAG 2.1 is structured around four core principles. I evaluate and address every criterion within each principle.</p>
+        </div>
+        <div class="standards-grid">
+          <div class="standard-item">
+            <div class="standard-item__letter">P</div>
+            <h3>Perceivable</h3>
+            <p>All content must be presentable in ways users can perceive — including alt text for images, captions for video, sufficient colour contrast, and text that can be resized without loss of functionality.</p>
+          </div>
+          <div class="standard-item">
+            <div class="standard-item__letter">O</div>
+            <h3>Operable</h3>
+            <p>All functionality must be operable via keyboard alone. No time limits that cannot be extended. No content that causes seizures. Clear navigation with consistent, predictable patterns.</p>
+          </div>
+          <div class="standard-item">
+            <div class="standard-item__letter">U</div>
+            <h3>Understandable</h3>
+            <p>Text content must be readable and understandable. Pages must operate in predictable ways. Users must be helped to avoid and correct mistakes — particularly in forms.</p>
+          </div>
+          <div class="standard-item">
+            <div class="standard-item__letter">R</div>
+            <h3>Robust</h3>
+            <p>Content must be robust enough to be interpreted reliably by a wide range of assistive technologies — including screen readers, voice control software, and switch navigation devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="svc-process section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Process</span>
+          <h2 class="section-title">Audit. Remediate. Test. Certify.</h2>
+          <p class="section-sub">A structured approach that gives your organisation clear visibility of where you stand and a defined path to full compliance.</p>
+        </div>
+        <div class="process-steps">
+          <div class="process-step process-step--light">
+            <div class="process-step__num">01</div>
+            <div class="process-step__body">
+              <h3>Automated &amp; Manual Audit</h3>
+              <p>Automated scanning tools identify the most common issues instantly. This is followed by thorough manual testing — keyboard navigation, screen reader testing, and cognitive accessibility review — which catches what automated tools miss.</p>
+            </div>
+          </div>
+          <div class="process-step process-step--light">
+            <div class="process-step__num">02</div>
+            <div class="process-step__body">
+              <h3>Prioritised Findings Report</h3>
+              <p>A clear report of all findings — ranked by severity and categorised by WCAG criterion. Each issue includes its location, impact, and a specific recommended fix. No jargon; actionable from day one.</p>
+            </div>
+          </div>
+          <div class="process-step process-step--light">
+            <div class="process-step__num">03</div>
+            <div class="process-step__body">
+              <h3>UX Review &amp; Journey Mapping</h3>
+              <p>Alongside the technical audit, a review of key user journeys from an inclusive design perspective — identifying barriers that may not constitute a WCAG failure but still create poor experiences for users with additional needs.</p>
+            </div>
+          </div>
+          <div class="process-step process-step--light">
+            <div class="process-step__num">04</div>
+            <div class="process-step__body">
+              <h3>Remediation</h3>
+              <p>Hands-on implementation of fixes — either directly or in close collaboration with your development team. All changes validated in a staging environment before deployment.</p>
+            </div>
+          </div>
+          <div class="process-step process-step--light">
+            <div class="process-step__num">05</div>
+            <div class="process-step__body">
+              <h3>Re-Audit &amp; Verification</h3>
+              <p>Post-remediation testing to verify all issues are resolved and no new issues have been introduced. A clean re-audit report confirming WCAG 2.1 AA compliance.</p>
+            </div>
+          </div>
+          <div class="process-step process-step--light">
+            <div class="process-step__num">06</div>
+            <div class="process-step__body">
+              <h3>Accessibility Statement &amp; Ongoing Support</h3>
+              <p>Publication of a legally compliant accessibility statement. Guidance for your team on maintaining compliance as the site evolves, with ongoing review available as a retained service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="svc-audience section section--light" id="audience">
+      <div class="container svc-audience__inner">
+        <div class="svc-audience__text">
+          <span class="section-label">Who This Is For</span>
+          <h2 class="section-title">Compliance Is Not Optional.</h2>
+          <p>For regulated industries, accessibility is a legal requirement. For all other businesses, it is a competitive advantage. Either way, the cost of not addressing it is always higher than the cost of remediation.</p>
+          <a href="contact.html" class="btn btn--primary">Request an Accessibility Audit</a>
+        </div>
+        <div class="svc-audience__list">
+          <div class="audience-item">
+            <div class="audience-item__check" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>National legal practices and regulated firms</strong> — where accessibility failures represent significant legal and reputational risk under the Equality Act 2010.
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item__check" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Public sector and publicly funded organisations</strong> required to meet the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018.
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item__check" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Businesses with high-volume consumer-facing sites</strong> wanting to maximise their audience reach and reduce avoidable friction in the user journey.
+            </div>
+          </div>
+          <div class="audience-item">
+            <div class="audience-item__check" aria-hidden="true">&#10003;</div>
+            <div>
+              <strong>Organisations undergoing redesigns or migrations</strong> — the ideal time to embed accessibility from the ground up rather than remediate after the fact.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="related-services section" id="related">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Complementary Services</span>
+          <h2 class="section-title">Accessibility Amplifies Everything Else.</h2>
+        </div>
+        <div class="related-grid">
+          <a href="service-bespoke-design.html" class="related-card">
+            <div class="related-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Bespoke Website Design</h3>
+            <p>Accessibility built in from day one — not bolted on afterwards. Every custom build I produce is developed with WCAG compliance as a core requirement.</p>
+            <span class="related-card__arrow">&rarr;</span>
+          </a>
+          <a href="service-digital-marketing.html" class="related-card">
+            <div class="related-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-8"/></svg>
+            </div>
+            <h3>Digital Marketing &amp; CRO</h3>
+            <p>An accessible site with well-structured content and clear user journeys outperforms in both organic search and conversion rate — a compounding advantage.</p>
+            <span class="related-card__arrow">&rarr;</span>
+          </a>
+          <a href="service-platform-migrations.html" class="related-card">
+            <div class="related-card__icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 17l6-6 4 4 6-8"/><circle cx="4" cy="17" r="1"/><circle cx="10" cy="11" r="1"/><circle cx="14" cy="15" r="1"/><circle cx="20" cy="7" r="1"/></svg>
+            </div>
+            <h3>Platform Migrations</h3>
+            <p>A migration is the perfect opportunity to resolve legacy accessibility debt — ensuring your new platform is compliant from go-live.</p>
+            <span class="related-card__arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner section--dark" aria-label="Call to action">
+      <div class="container cta-banner__inner">
+        <div class="cta-banner__text">
+          <h2>Is Your Website Accessible to Everyone?</h2>
+          <p>An accessibility audit takes days. Fixing the fallout from a compliance failure takes much longer.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--lg">Request an Audit</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo">
+          <span class="logo-mark">BC</span>
+          <span class="logo-text">Ben Coetzee Digital</span>
+        </a>
+        <p>Enterprise-grade digital performance, tailored for your ambition. Based in the South West, serving the UK.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__services">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="service-bespoke-design.html">Bespoke Website Design</a></li>
+          <li><a href="service-digital-marketing.html">Digital Marketing &amp; CRO</a></li>
+          <li><a href="service-platform-migrations.html">Platform Migrations</a></li>
+          <li><a href="service-ux-accessibility.html">UX &amp; Accessibility</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Location</h3>
+        <p>South West, UK<br />Weston-super-Mare &bull; Bristol &bull; Somerset</p>
+        <a href="contact.html" class="btn btn--outline btn--sm">Get in Touch</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Ben Coetzee Digital Consultancy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
