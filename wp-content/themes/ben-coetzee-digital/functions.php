@@ -407,14 +407,27 @@ function bcd_customize_register( $wp_customize ) {
 		'priority' => 20,
 	] );
 
-	// Logo Mark (e.g. "BC")
+	// Logo Mark Image
+	$wp_customize->add_setting( 'bcd_logo_mark_image', [
+		'default'           => '',
+		'sanitize_callback' => 'esc_url_raw',
+		'transport'         => 'postMessage',
+	] );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'bcd_logo_mark_image', [
+		'label'   => __( 'Logo Mark Image', 'ben-coetzee-digital' ),
+		'description' => __( 'Upload a logo image. If empty, the text fallback below is used.', 'ben-coetzee-digital' ),
+		'section' => 'bcd_logo_section',
+	] ) );
+
+	// Logo Mark Text Fallback (e.g. "BC")
 	$wp_customize->add_setting( 'bcd_logo_mark', [
 		'default'           => 'BC',
 		'sanitize_callback' => 'sanitize_text_field',
 		'transport'         => 'postMessage',
 	] );
 	$wp_customize->add_control( 'bcd_logo_mark', [
-		'label'   => __( 'Logo Mark', 'ben-coetzee-digital' ),
+		'label'   => __( 'Logo Mark Text (fallback)', 'ben-coetzee-digital' ),
+		'description' => __( 'Shown when no image is uploaded.', 'ben-coetzee-digital' ),
 		'section' => 'bcd_logo_section',
 		'type'    => 'text',
 	] );
@@ -433,11 +446,15 @@ function bcd_customize_register( $wp_customize ) {
 
 	// Live preview JS
 	if ( isset( $wp_customize->selective_refresh ) ) {
+		$wp_customize->selective_refresh->add_partial( 'bcd_logo_mark_image', [
+			'selector'            => '.logo-mark',
+			'render_callback'     => 'bcd_render_logo_mark',
+			'container_inclusive' => false,
+		] );
 		$wp_customize->selective_refresh->add_partial( 'bcd_logo_mark', [
-			'selector'        => '.logo-mark',
-			'render_callback' => function() {
-				echo esc_html( get_theme_mod( 'bcd_logo_mark', 'BC' ) );
-			},
+			'selector'            => '.logo-mark',
+			'render_callback'     => 'bcd_render_logo_mark',
+			'container_inclusive' => false,
 		] );
 		$wp_customize->selective_refresh->add_partial( 'bcd_logo_text', [
 			'selector'        => '.logo-text',
@@ -448,6 +465,16 @@ function bcd_customize_register( $wp_customize ) {
 	}
 }
 add_action( 'customize_register', 'bcd_customize_register' );
+
+function bcd_render_logo_mark() {
+	$image = get_theme_mod( 'bcd_logo_mark_image', '' );
+	$text  = get_theme_mod( 'bcd_logo_mark', 'BC' );
+	if ( $image ) {
+		echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '" class="logo-mark__img">';
+	} else {
+		echo esc_html( $text );
+	}
+}
 
 function bcd_customize_preview_js() {
 	wp_enqueue_script(
