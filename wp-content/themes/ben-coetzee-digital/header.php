@@ -11,8 +11,8 @@
 <header class="site-header" id="site-header">
   <nav class="nav container">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav__logo">
-      <span class="logo-mark">BC</span>
-      <span class="logo-text">Ben Coetzee Digital</span>
+      <span class="logo-mark"><?php echo esc_html( get_theme_mod( 'bcd_logo_mark', 'BC' ) ); ?></span>
+      <span class="logo-text"><?php echo esc_html( get_theme_mod( 'bcd_logo_text', 'Ben Coetzee Digital' ) ); ?></span>
     </a>
 
     <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
