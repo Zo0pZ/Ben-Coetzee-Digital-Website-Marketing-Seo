@@ -1,0 +1,17 @@
+# Local/machine-specific tool settings
+.claude/settings.local.json
+
+# Build artifacts
+wp-content/themes/ben-coetzee-digital.zip
+
+# Third-party WordPress plugins (installed separately, not theme source)
+wp-content/plugins/
+
+# Internal working docs (kept locally, not committed)
+/ACTION-PLAN.md
+/FULL-AUDIT-REPORT.md
+
+# Scratch captures / exports
+/download.pdf
+/FireShot Capture*.pdf
+/www.bencoetzee.co.uk-*.json
