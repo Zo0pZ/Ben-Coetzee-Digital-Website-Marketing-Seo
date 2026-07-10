@@ -115,7 +115,7 @@
               <?php endif; ?>
               <h3 class="service-card__title"><?php the_title(); ?></h3>
               <p class="service-card__body"><?php echo esc_html( $excerpt ); ?></p>
-              <a href="<?php the_permalink(); ?>" class="service-card__link">Learn More &rarr;</a>
+              <a href="<?php the_permalink(); ?>" class="service-card__link">Learn more about <?php the_title(); ?> &rarr;</a>
             </article>
           <?php endwhile;
           wp_reset_postdata();
@@ -151,28 +151,28 @@
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           </div>
-          <h4>Corporate Expertise</h4>
+          <h3>Corporate Expertise</h3>
           <p>Senior-level strategic thinking applied to every project, regardless of scale.</p>
         </div>
         <div class="pillar">
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h4>Direct Accountability</h4>
+          <h3>Direct Accountability</h3>
           <p>One point of contact. No handoffs, no confusion. Your project, my responsibility.</p>
         </div>
         <div class="pillar">
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h4>Investment Protected</h4>
+          <h3>Investment Protected</h3>
           <p>Rigorous approach to security, compliance, and quality at every stage of delivery.</p>
         </div>
         <div class="pillar">
           <div class="pillar__icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
-          <h4>National Reach, Local Roots</h4>
+          <h3>National Reach, Local Roots</h3>
           <p>Serving businesses across the South West and nationally, with a personal touch.</p>
         </div>
       </div>

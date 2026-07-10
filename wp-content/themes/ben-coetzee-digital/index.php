@@ -30,7 +30,7 @@ get_header(); ?>
             <article class="service-card" id="post-<?php the_ID(); ?>">
               <h3 class="service-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <p class="service-card__body"><?php the_excerpt(); ?></p>
-              <a href="<?php the_permalink(); ?>" class="service-card__link">Read More &rarr;</a>
+              <a href="<?php the_permalink(); ?>" class="service-card__link">Read more about <?php the_title(); ?> &rarr;</a>
             </article>
           <?php endwhile; ?>
         </div>

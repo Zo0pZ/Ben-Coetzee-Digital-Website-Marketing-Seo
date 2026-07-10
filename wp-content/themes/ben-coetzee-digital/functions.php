@@ -42,7 +42,10 @@ function bcd_enqueue() {
 		BCD_URI . '/assets/js/main.js',
 		[],
 		BCD_VERSION,
-		true
+		[
+			'strategy'  => 'defer',
+			'in_footer' => true,
+		]
 	);
 }
 add_action( 'wp_enqueue_scripts', 'bcd_enqueue' );

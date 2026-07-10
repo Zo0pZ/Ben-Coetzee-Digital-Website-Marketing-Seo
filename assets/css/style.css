@@ -1402,7 +1402,7 @@ button, input, select, textarea {
   margin-bottom: var(--space-3);
 }
 
-.pillar h4 {
+.pillar h3 {
   font-size: var(--text-sm);
   font-weight: 600;
   color: var(--clr-text);
